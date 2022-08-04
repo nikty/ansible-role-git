@@ -1,0 +1,11 @@
+---
+- name: Converge
+  hosts: all
+  become: yes
+  vars:
+    ansible_python_interpreter: python3
+  tasks:
+
+    - name: "Include git"
+      include_role:
+        name: "git"

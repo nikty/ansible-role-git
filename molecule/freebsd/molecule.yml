@@ -1,0 +1,12 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: vagrant
+platforms:
+  - name: test-git-role-on-freebsd
+    box: generic/freebsd12
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
